@@ -21,7 +21,7 @@
 
 **How to run it (using IDE)?**
 
-- open `GitLeaks.java` file in your favourite IDE (IntelliJ Idea, VsCode, Eclipse etc.)
+- open `GitLeaks.java` file with your favourite IDE (IntelliJ Idea, VsCode, Eclipse etc.)
 - click `Run|Run&Debug` button
 
 
