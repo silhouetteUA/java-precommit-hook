@@ -8,7 +8,7 @@
 
 - Script is running `./gitleaks protect --staged . -v` in your local git repo
 - In case script detects that `gitleak` is not installed, it executes the installation process
-- This script also adds `pre-commit` hook to current local git repo
+- This script also adds `pre-commit` hook to the current local git repo
 - In addition it adds "git config gitleaks.enable true" to `git config` upon the `gitleak` utility installation
 - You can manually add `git config gitleaks.enable false` to disable this script from execution, `gitleaks` utility will not be triggered and user will be prompted about that!
 
