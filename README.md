@@ -26,7 +26,12 @@
 
 
 
+
+
+
 ***- - - - - - - - - Proof Of Concept - - - - - - - - -***
+
+
 
 **using the script itself**
 ````
@@ -64,6 +69,8 @@ Fingerprint: secret4.yaml:generic-api-key:3
 Commit rejected, check GitLeaks output above!
 ````
 
+
+
 **using the `pre-commit` hook created by the script**
 
 ````
@@ -97,6 +104,8 @@ Fingerprint: secret4.yaml:generic-api-key:3
 5:12PM INF scan completed in 19.3ms
 5:12PM WRN leaks found: 2
 ````
+
+
 
 
 **gitleaks is not installed, pre-commit hook is not added**
