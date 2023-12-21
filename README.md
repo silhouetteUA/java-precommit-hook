@@ -10,7 +10,7 @@
 - In case script detects that `gitleak` is not installed, it executes the installation process
 - This script also adds `pre-commit` hook to current local git repo
 - In addition it adds "git config gitleaks.enable true" to `git config` upon the `gitleak` utility installation
-- You can manually add `git config gitleaks.enable false` to disable this script even if it will be executed, `gitleaks` utility will not be triggered and user will be prompted with that!
+- You can manually add `git config gitleaks.enable false` to disable this script from execution, `gitleaks` utility will not be triggered and user will be prompted about that!
 
 **How to run it (no IDE)?**
 
