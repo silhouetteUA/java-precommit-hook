@@ -6,8 +6,8 @@ import java.nio.file.StandardOpenOption;
 public class GitLeaks   {
 
     private static final String GITLEAKS_VERSION = "8.18.0";
-    private static final String OS_NAME = System.getProperty("os.name").toLowerCase();  // mac os x
-    private static final String OS_ARCH = System.getProperty("os.arch").toLowerCase();  // aarch64
+    private static final String OS_NAME = System.getProperty("os.name").toLowerCase().trim();  // mac os x
+    private static final String OS_ARCH = System.getProperty("os.arch").toLowerCase().trim();  // aarch64
     
     public static void main(String[] args) {
         checkUsingGitLeaks();
