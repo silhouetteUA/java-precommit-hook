@@ -8,6 +8,7 @@ public class GitLeaks   {
     private static final String GITLEAKS_VERSION = "8.18.0";
     private static final String OS_NAME = System.getProperty("os.name").toLowerCase();  // mac os x
     private static final String OS_ARCH = System.getProperty("os.arch").toLowerCase();  // aarch64
+    
     public static void main(String[] args) {
         checkUsingGitLeaks();
     }
@@ -100,6 +101,7 @@ public class GitLeaks   {
 
 
     private static void checkUsingGitLeaks() {
+        
         try {
             Process versionProcess = new ProcessBuilder("./gitleaks", "version").start();
             versionProcess.waitFor();
@@ -107,7 +109,6 @@ public class GitLeaks   {
             System.out.println("GitLeaks is not installed, installing ...");
             installGitLeaks();
         }
-
 
         ProcessBuilder chekcIfGLEnabled = new ProcessBuilder("git", "config", "--get", "gitleaks.enable");
         try {
@@ -134,7 +135,7 @@ public class GitLeaks   {
                     System.exit(1);
                 }
             } else {
-                System.out.println("You have disabled the check, run \"git config gitleaks.enable true\" to enable the ckecks via the script ");
+                System.out.println("You have manually disabled the check, run \"git config gitleaks.enable true\" to enable the ckecks again! ");
             }
         } catch (IOException | InterruptedException e)  {
             e.printStackTrace();
