@@ -2,11 +2,11 @@
 
 **Codebase:** This script is written in Java
 
-**Purpose:** The general idea here, is to install `gitleaks` utility based on users OS/ARCH and check if there are any secrets hardcoded in staged for commit files.
+**Purpose:** The general idea here, is to install `gitleaks` utility based on user's OS/ARCH and check if there are any secrets hardcoded in staged for commit files.
 
 **Execution:**  
 
-- Script is running "./gitleaks protect --staged . -v" in your local git repo
+- Script is running `./gitleaks protect --staged . -v` in your local git repo
 - In case script detects that `gitleak` is not installed, it executes the installation process
 - This script also adds `pre-commit` hook to current local git repo
 - In addition it adds "git config gitleaks.enable true" to `git config` upon the `gitleak` utility installation
