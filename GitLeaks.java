@@ -27,7 +27,7 @@ public class GitLeaks   {
             FILENAME += OS_ARCH.contains("aarch64") ? "linux_arm64.tar.gz" : "linux_x64.tar.gz";
         } else if (OS_NAME.contains("mac") || OS_NAME.contains("darwin")) {
             FILENAME += OS_ARCH.contains("aarch64") ? "darwin_arm64.tar.gz" : "darwin_x64.tar.gz";
-        } else if (OS_NAME.contains("wind")) {
+        } else if (OS_NAME.contains("windows")) {
             FILENAME += OS_ARCH.contains("aarch64") ? "windows_arm64.zip" : "windows_x64.zip";
         } else {
             System.err.println("Wrong OS .. please install yourself something ordinary ...");
@@ -44,7 +44,7 @@ public class GitLeaks   {
             Process chmodProcess = null;
             Process removeProcess = null;
             //Windows
-            if (OS_NAME.contains("wind")) {
+            if (OS_NAME.contains("windows")) {
                 downloadProcess = new ProcessBuilder("curl", "-sfL", DOWNLOAD_URL, "-o", resultOutput + ".zip").start();
                 downloadProcess.waitFor();
                 extractProcess = new ProcessBuilder("7z", "x", resultOutput + ".zip", "-o", resultOutput).start();
