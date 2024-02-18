@@ -1,4 +1,4 @@
-# java-precommit-hook-week8-practice1
+# java-precommit-hook
 
 **Codebase:** This script is written in Java
 
